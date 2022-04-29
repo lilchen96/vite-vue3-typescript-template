@@ -1,7 +1,7 @@
 <!--
  * @Author: chenzihan
  * @Date: 2022-04-28 16:43:30
- * @LastEditTime: 2022-04-29 16:54:42
+ * @LastEditTime: 2022-04-29 16:59:57
  * @LastEditors: chenzihan
  * @Description: 页面模板文件
  * @FilePath: \vite-vue3-typescript-template\src\pages\templateA\index.vue
@@ -12,7 +12,8 @@
     <h2>{{ templateStore.str }}</h2>
     <button @click="goTemplate2">跳转template2</button>
     <el-button>ssadasda</el-button>
-    <div v-for="item in templateStore.strSplit">{{ item }}
+    <div v-for="item in templateStore.strSplit" :key="item">
+      {{ item }}
     </div>
   </div>
 </template>
