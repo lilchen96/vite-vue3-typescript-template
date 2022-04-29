@@ -1,7 +1,7 @@
 <!--
  * @Author: chenzihan
  * @Date: 2022-04-28 16:43:30
- * @LastEditTime: 2022-04-29 16:46:38
+ * @LastEditTime: 2022-04-29 16:50:01
  * @LastEditors: chenzihan
  * @Description: 页面模板文件
  * @FilePath: \vite-vue3-typescript-template\src\pages\templateA\index.vue
@@ -12,8 +12,9 @@
     <h2>{{ templateStore.str }}</h2>
     <button @click="goTemplate2">跳转template2</button>
     <el-button>ssadasda</el-button>
-    <div v-for="item in templateStore.strSplit" :key="item">
-      {{ item }}</div>
+    <div v-for="item in templateStore.strSplit">
+      {{ item }}
+    </div>
   </div>
 </template>
 <!-- <script setup lang="ts" name="TemplateA"> name为组件名称，为保证keepalive正常工作，需和route的name保持一致 -->
