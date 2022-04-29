@@ -1,10 +1,10 @@
 <!--
  * @Author: chenzihan
  * @Date: 2022-04-28 16:43:30
- * @LastEditTime: 2022-04-29 16:01:05
+ * @LastEditTime: 2022-04-29 16:39:32
  * @LastEditors: chenzihan
  * @Description: 页面模板文件
- * @FilePath: \vue3-ts-vite-template\src\pages\templateA\index.vue
+ * @FilePath: \vite-vue3-typescript-template\src\pages\templateA\index.vue
 -->
 <template>
   <div>
@@ -21,7 +21,7 @@
 <script setup lang="ts" name="TemplateA">
 const router = useRouter();
 const templateStore = $store.useTemplateStore();
-templateStore.setStr('标题');
+templateStore.setStr('标题1');
 console.log(templateStore.strSplit);
 
 function goTemplate2(): void {
